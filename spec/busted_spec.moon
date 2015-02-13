@@ -2,7 +2,7 @@ describe "My tests", ->
    it "should My tests should pass", ->
       assert.truthy "test"
 
-   it "should be false", ->
+   it "should be false #false", ->
       assert.falsy nil
 
    it "should be the same", ->
@@ -10,3 +10,6 @@ describe "My tests", ->
 
    it "Should not be the same", ->
       assert.are_not_equal 1, 0
+
+   it "Should is_true #true", ->
+      assert.is_true(1==1)
