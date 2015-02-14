@@ -6,14 +6,14 @@ source = {
 }
 
 description = {
-	summary = "My collected learning of moonscript"
+	summary = "My collected learning of moonscript",
 	homepage = "http://github.com/lowks",
 	maintainer = "Low Kian Seong <kianseong@gmail.com>",
 	license = "MIT"
 }
 
 dependencies = {
-	"lua ~> 5.1",
+	"lua ~> 5.2",
 	"busted",
 }
 
