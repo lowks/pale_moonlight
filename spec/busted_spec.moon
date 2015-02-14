@@ -1,3 +1,5 @@
+print_me = require "pale_moonlight.print_me"
+
 describe "My tests", ->
    it "should My tests should pass", ->
       assert.truthy "test"
@@ -13,3 +15,6 @@ describe "My tests", ->
 
    it "Should is_true #true", ->
       assert.is_true(1==1)
+
+   it "Should print stuff", ->
+	assert.same "lolo", print_me "lolo"
