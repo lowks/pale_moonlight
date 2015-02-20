@@ -1,2 +1,2 @@
 # pale_moonlight
-Moonscript lessons
+Moonscript lessons and examples
