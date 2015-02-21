@@ -1,4 +1,5 @@
 print_me = require "pale_moonlight.print_me"
+import print_name from require "pale_moonlight.test_function"
 
 describe "My tests", ->
    it "should My tests should pass", ->
@@ -18,3 +19,8 @@ describe "My tests", ->
 
    it "Should print stuff", ->
 	assert.same "lolo", print_me "lolo"
+
+   it "Should print the name", ->
+	result = print_name "hello"
+	assert.same "success", result[1] 
+	assert.same "My name is hello", result[2] 
