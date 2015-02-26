@@ -1,5 +1,6 @@
 print_me = require "pale_moonlight.print_me"
 import print_name from require "pale_moonlight.test_function"
+import string_reverse from require "pale_moonlight.strings_galore"
 
 describe "My tests", ->
    it "should My tests should pass", ->
@@ -24,3 +25,6 @@ describe "My tests", ->
 	result = print_name "hello"
 	assert.same "success", result[1] 
 	assert.same "My name is hello", result[2] 
+
+   it "Should reverse the string", ->
+       assert.same "olol", string_reverse "lolo"
